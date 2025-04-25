@@ -1,15 +1,26 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import lse.ListaSimplementeEnlazada;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //insertar elementos a nuestra lista
+        ListaSimplementeEnlazada listaSimplementeEnlazada = new ListaSimplementeEnlazada();
+        System.out.println(listaSimplementeEnlazada.estaVacia());
+        listaSimplementeEnlazada.insertar(5);
+        listaSimplementeEnlazada.insertar(4);
+        listaSimplementeEnlazada.insertar(3);
+        listaSimplementeEnlazada.insertar(2);
+        listaSimplementeEnlazada.insertar(1);
+        listaSimplementeEnlazada.insertar(0);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //mostramos la lista
+        listaSimplementeEnlazada.mostrar();
+
+        // eliminar algunos elementos
+        listaSimplementeEnlazada.eliminar();
+        listaSimplementeEnlazada.eliminar();
+
+        //mostramos nuestra lista
+        listaSimplementeEnlazada.mostrar();
+
     }
 }
