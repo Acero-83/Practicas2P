@@ -1,3 +1,4 @@
+import lcde.ListaCircularDoblementeEnlazada;
 import lcse.ListaCircularSimplementeEnlazada;
 import lde.ListaDoblementeEnlazada;
 import lse.ListaSimplementeEnlazada;
@@ -37,7 +38,7 @@ public class Main {
         listaDoblementeEnlazada.eliminar();
 
         listaDoblementeEnlazada.mostrarAdelante();
-        listaDoblementeEnlazada.mostrarAtras(); */
+        listaDoblementeEnlazada.mostrarAtras();
 
         ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
         System.out.println(listaCircularSimplementeEnlazada.estaVacia());
@@ -49,6 +50,21 @@ public class Main {
         listaCircularSimplementeEnlazada.mostrar();
         System.out.println(listaCircularSimplementeEnlazada.tamaño());
 
-       listaCircularSimplementeEnlazada.mostrarCircular(2);
+       listaCircularSimplementeEnlazada.mostrarCircular(2);*/
+
+
+        ListaCircularDoblementeEnlazada listaCircularDoblementeEnlazada = new ListaCircularDoblementeEnlazada();
+
+        System.out.println(listaCircularDoblementeEnlazada.estaVacio());
+        for (int i = 1; i <= 5 ; i++) {
+            listaCircularDoblementeEnlazada.insertarFinal(i);
+        }
+        listaCircularDoblementeEnlazada.mostrar();
+        listaCircularDoblementeEnlazada.eliminarFinal();
+        listaCircularDoblementeEnlazada.eliminarFinal();
+        listaCircularDoblementeEnlazada.mostrar();
+
+        listaCircularDoblementeEnlazada.mostrarAdelante(8);
+        listaCircularDoblementeEnlazada.mostrarAtras(8);
     }
 }
