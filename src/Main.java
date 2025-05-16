@@ -1,3 +1,4 @@
+import Recursividad.Ejercicios;
 import pc.Pila;
 
 public class Main {
@@ -70,7 +71,7 @@ public class Main {
         for (int i = 0; i <=5; i++) {
             cola.insertar(i);
         }
-        cola.mostrar();*/
+        cola.mostrar();
         Pila pila = new Pila();
         System.out.println(pila.estaVacia());
         for (int i = 0; i <=5; i++) {
@@ -81,5 +82,7 @@ public class Main {
         pila.eliminar();
         pila.eliminar();
         pila.mostrar();
+        System.out.println(Ejercicios.factorial(5));*/
+        System.out.println(Ejercicios.mcd(412,184));
     }
 }
