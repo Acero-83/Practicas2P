@@ -1,4 +1,5 @@
 import Recursividad.Ejercicios;
+import Recursividad.EjerciciosPropuestos;
 import pc.Pila;
 
 public class Main {
@@ -82,7 +83,15 @@ public class Main {
         pila.eliminar();
         pila.eliminar();
         pila.mostrar();
-        System.out.println(Ejercicios.factorial(5));*/
+        System.out.println(Ejercicios.factorial(5));
         System.out.println(Ejercicios.mcd(412,184));
+        int[] vector= {1,2,3,4,5};
+        System.out.println(EjerciciosPropuestos.sumaVector(vector,0));
+        String palabra="hugo";
+        System.out.println(EjerciciosPropuestos.invertirCadena(palabra));
+        int[] vector= {1,2,3,4,5};
+        System.out.println(EjerciciosPropuestos.promedioVector(vector,5));*/
+        System.out.println(EjerciciosPropuestos.potencia(2,3));
+
     }
 }
