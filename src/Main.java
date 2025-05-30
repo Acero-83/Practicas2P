@@ -1,3 +1,4 @@
+import Recursividad.EjPropuestos30Mayo;
 import Recursividad.Ejercicios;
 import Recursividad.EjerciciosPropuestos;
 import pc.Pila;
@@ -90,8 +91,25 @@ public class Main {
         String palabra="hugo";
         System.out.println(EjerciciosPropuestos.invertirCadena(palabra));
         int[] vector= {1,2,3,4,5};
-        System.out.println(EjerciciosPropuestos.promedioVector(vector,5));*/
+        System.out.println(EjerciciosPropuestos.promedioVector(vector,5));
         System.out.println(EjerciciosPropuestos.potencia(2,3));
+        int[] vector1= {1,2,3,4,5};
+        int[] vector2= {1,2,3,4,5};
+        System.out.println(ejPropuestos30Mayo.compararVectores(vector1,vector2,0));
+        int[] vector= {1,2,3,4,5};
+        EjPropuestos30Mayo ejercicio = new EjPropuestos30Mayo();
+        System.out.println(ejercicio.maximoVector(vector,1, vector[0]));*/
+        EjPropuestos30Mayo ejercicio = new EjPropuestos30Mayo();
+        int[][][] matriz1 = {
+                { {1, 2}, {3, 4} },
+                { {5, 6}, {7, 4} }
+        };
 
+        int[][][] matriz2 = {
+                { {1, 2}, {3, 4} },
+                { {5, 6}, {7, 8} }
+        };
+        System.out.println(ejercicio.comparar2x2(matriz1,matriz2,0,0,0));
+        System.out.println(ejercicio.mayor2x2x2(matriz1,0,0,0,0));
     }
 }
