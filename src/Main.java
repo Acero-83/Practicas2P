@@ -1,3 +1,4 @@
+import ArbolBinario.Arbol;
 import Recursividad.EjPropuestos30Mayo;
 import Recursividad.Ejercicios;
 import Recursividad.EjerciciosPropuestos;
@@ -98,7 +99,7 @@ public class Main {
         System.out.println(ejPropuestos30Mayo.compararVectores(vector1,vector2,0));
         int[] vector= {1,2,3,4,5};
         EjPropuestos30Mayo ejercicio = new EjPropuestos30Mayo();
-        System.out.println(ejercicio.maximoVector(vector,1, vector[0]));*/
+        System.out.println(ejercicio.maximoVector(vector,1, vector[0]));
         EjPropuestos30Mayo ejercicio = new EjPropuestos30Mayo();
         int[][][] matriz1 = {
                 { {1, 2}, {3, 4} },
@@ -110,6 +111,20 @@ public class Main {
                 { {5, 6}, {7, 8} }
         };
         System.out.println(ejercicio.comparar2x2(matriz1,matriz2,0,0,0));
-        System.out.println(ejercicio.mayor2x2x2(matriz1,0,0,0,0));
+        System.out.println(ejercicio.mayor2x2x2(matriz1,0,0,0,0));*/
+
+        Arbol arbol = new Arbol();
+
+        arbol.insertar(10);
+        arbol.insertar(5);
+        arbol.insertar(15);
+        arbol.insertar(3);
+        arbol.insertar(7);
+        arbol.insertar(12);
+        arbol.insertar(18);
+
+        System.out.print("Recorrido Inorden: ");
+        arbol.inorder();
     }
 }
+
