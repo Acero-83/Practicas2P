@@ -1,7 +1,7 @@
 package lse;
 
 public class ListaSimplementeEnlazada {
-    Nodo primero;
+    public Nodo primero;
     public ListaSimplementeEnlazada() {
         primero = null;
     }
